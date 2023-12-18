@@ -84,7 +84,7 @@ class Player:
     def draw(self):
         if self.damage_count <= 0 or pyxel.frame_count % 2 == 0:
             pyxel.circ(self.x, self.y, 15, 0)
-            pyxel.circ(self.x, self.y, 13, 5)
+            pyxel.circ(self.x, self.y, 13, 9)
         pyxel.rect(self.x-25, self.y-25, 50, 5, 14)
         pyxel.rect(self.x-25, self.y-25, 50*self.hp/self.max_hp, 5, 11)
         pyxel.rect(self.x-25, self.y-20, 50*self.exp/10, 3, 10)
